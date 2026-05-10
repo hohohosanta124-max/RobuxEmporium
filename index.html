@@ -23,17 +23,7 @@
       color: var(--white);
       font-family: 'DM Sans', sans-serif;
       overflow-x: hidden;
-      cursor: none;
     }
- 
-    /* cursor */
-    .cur-dot {
-      position: fixed; top: 0; left: 0; width: 10px; height: 10px;
-      background: var(--red); border-radius: 50%; pointer-events: none; z-index: 10000;
-      transform: translate(-50%,-50%); transition: width .12s, height .12s;
-      box-shadow: 0 0 12px rgba(232,35,42,1), 0 0 28px rgba(232,35,42,0.5);
-    }
-    .cur-dot.hov { width: 14px; height: 14px; }
  
     /* grain */
     body::after {
@@ -361,7 +351,6 @@
       .step { padding: 1.8rem 1.2rem; margin: 0; }
       .dcta { padding: 3rem 1.4rem; }
       footer { flex-direction: column; text-align: center; padding: 1.4rem 1.2rem; }
-      .cur-dot { display: none; }
     }
     @media (max-width: 480px) {
       .steps { grid-template-columns: 1fr; }
@@ -371,8 +360,6 @@
   </style>
 </head>
 <body>
- 
-  <div class="cur-dot" id="curDot"></div>
  
   <!-- NAV -->
   <nav>
@@ -428,13 +415,13 @@
       <span class="tick">Instant Delivery</span>
       <span class="tick">Trusted Seller</span>
       <span class="tick">Secure Transactions</span>
-      <span class="tick">500+ Accounts Sold</span>
+      <span class="tick">100+ Accounts Sold</span>
       <span class="tick">Join Discord to Browse</span>
       <span class="tick">Premium Roblox Accounts</span>
       <span class="tick">Instant Delivery</span>
       <span class="tick">Trusted Seller</span>
       <span class="tick">Secure Transactions</span>
-      <span class="tick">500+ Accounts Sold</span>
+      <span class="tick">100+ Accounts Sold</span>
       <span class="tick">Join Discord to Browse</span>
     </div>
   </div>
@@ -442,7 +429,7 @@
   <!-- STATS -->
   <div class="statsbar reveal">
     <div class="stat-cell">
-      <span class="stat-n">500+</span>
+      <span class="stat-n">100+</span>
       <div class="stat-l">Accounts Sold</div>
     </div>
     <div class="stat-cell">
@@ -532,14 +519,13 @@
     <div class="wrap">
       <div class="dcta reveal">
         <div class="dcta-icon">
-          <!-- Discord logo with eyes -->
           <svg width="52" height="52" viewBox="0 0 127.14 96.36" xmlns="http://www.w3.org/2000/svg" fill="#5865f2">
             <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
           </svg>
         </div>
         <h2>Ready to Buy?</h2>
         <p>Join our Discord and open a ticket. We'll show you what's available and get you sorted within minutes.</p>
-        <a href="YOUR_DISCORD_INVITE_HERE" class="btn-discord" target="_blank" rel="noopener">
+        <a href="https://discord.gg/cdCSwWe9wg" class="btn-discord" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 127.14 96.36" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
             <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
           </svg>
@@ -561,18 +547,11 @@
   </footer>
  
   <script>
-    const dot = document.getElementById('curDot');
-    document.addEventListener('mousemove', e => { dot.style.left = e.clientX+'px'; dot.style.top = e.clientY+'px'; });
-    document.querySelectorAll('a, button, .card, .stat-cell, .step').forEach(el => {
-      el.addEventListener('mouseenter', () => dot.classList.add('hov'));
-      el.addEventListener('mouseleave', () => dot.classList.remove('hov'));
-    });
- 
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
     }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
- 
+
     function animCount(el) {
       const orig = el.textContent.trim();
       const m = orig.match(/^(\d+)(.*)/);
@@ -589,7 +568,7 @@
       entries.forEach(e => { if (e.isIntersecting) { animCount(e.target); cobs.unobserve(e.target); } });
     }, { threshold: 0.5 });
     document.querySelectorAll('.stat-n').forEach(el => cobs.observe(el));
- 
+
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav');
       nav.style.background = window.scrollY > 40 ? 'rgba(6,6,6,0.98)' : 'rgba(6,6,6,0.92)';
